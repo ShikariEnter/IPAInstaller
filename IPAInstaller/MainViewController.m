@@ -432,7 +432,7 @@
                            otherButtonTitles:nil];
         }
         actionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
-        [actionSheet showFromTabBar:self.tabBarController.tabBar];
+        [actionSheet showInView:self.view]; //fixes crash 
         [actionSheet release];
     }
     
