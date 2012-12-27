@@ -47,6 +47,28 @@
     }
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    NSString *filename = [url lastPathComponent];
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *testString = [paths objectAtIndex:0];
+    NSURL *documentURL = [NSURL fileURLWithPath:testString];
+    
+    NSURL *ipaSrcURL = [[documentURL URLByAppendingPathComponent:@"Inbox"] URLByAppendingPathComponent:filename];
+    NSURL *ipaDestURL = [documentURL URLByAppendingPathComponent:filename];
+
+    NSFileManager* theFM = [[NSFileManager alloc] init];
+    NSError* anError;
+    if (![theFM copyItemAtURL:ipaSrcURL
+                        toURL:ipaDestURL
+                        error:&anError]) {
+        NSLog(@"Failed to copy from %@ to %@ with error %@", ipaSrcURL, ipaDestURL, anError);
+    }
+    [theFM release];
+    
+    return YES;
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     /*
