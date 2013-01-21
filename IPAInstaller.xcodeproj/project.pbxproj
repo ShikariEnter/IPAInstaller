@@ -23,6 +23,7 @@
 		05C1E03D1404F67800C6A574 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C1E03C1404F67800C6A574 /* CoreGraphics.framework */; };
 		05DC77461409269C009B628C /* FlipsideViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05DC77481409269C009B628C /* FlipsideViewController_iPad.xib */; };
 		05DC775314092BB8009B628C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 05DC775514092BB8009B628C /* Localizable.strings */; };
+		32AD16B916AD7A7A00307C30 /* ipaiconass.png in Resources */ = {isa = PBXBuildFile; fileRef = 32AD16B816AD7A7A00307C30 /* ipaiconass.png */; };
 		32DEB48B147B9BB500B55ECC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 32DEB48A147B9BB500B55ECC /* Reachability.m */; };
 		32DEB48D147B9CE300B55ECC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32DEB48C147B9CE200B55ECC /* SystemConfiguration.framework */; };
 		D14FFFB9144052A300D9E52B /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D14FFF8F144052A300D9E52B /* ioapi.c */; };
@@ -90,6 +91,7 @@
 		05DC7749140926AC009B628C /* ru */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ru; path = ru.lproj/FlipsideViewController_iPad.xib; sourceTree = "<group>"; };
 		05DC775414092BB8009B628C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		05DC775614092BCC009B628C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		32AD16B816AD7A7A00307C30 /* ipaiconass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipaiconass.png; sourceTree = "<group>"; };
 		32DEB489147B9BB500B55ECC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		32DEB48A147B9BB500B55ECC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		32DEB48C147B9CE200B55ECC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -179,6 +181,7 @@
 		05C1DFED1404E87100C6A574 = {
 			isa = PBXGroup;
 			children = (
+				32AD16B816AD7A7A00307C30 /* ipaiconass.png */,
 				05C1E0241404ECA200C6A574 /* icon72.png */,
 				D14FFFDD144086C800D9E52B /* 37x-Checkmark.png */,
 				05C1E0221404EC9C00C6A574 /* icon@2x.png */,
@@ -434,6 +437,7 @@
 				05DC77461409269C009B628C /* FlipsideViewController_iPad.xib in Resources */,
 				05DC775314092BB8009B628C /* Localizable.strings in Resources */,
 				D14FFFDE144086C800D9E52B /* 37x-Checkmark.png in Resources */,
+				32AD16B916AD7A7A00307C30 /* ipaiconass.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
